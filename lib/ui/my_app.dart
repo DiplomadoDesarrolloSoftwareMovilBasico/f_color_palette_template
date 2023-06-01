@@ -11,8 +11,10 @@ class MyApp extends StatelessWidget {
     // vamos a usar GetMaterialApp para pdoer usar un diálogo sin context
     return GetMaterialApp(
       theme: ThemeData(
-        brightness: Brightness.light,
-        primarySwatch: ColorUtils.CreateMaterialColor('5F7161'),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: ColorUtils.CreateMaterialColor('5F7161'),
+        ),
+        useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
       home: const ColorSelectionPage(),
