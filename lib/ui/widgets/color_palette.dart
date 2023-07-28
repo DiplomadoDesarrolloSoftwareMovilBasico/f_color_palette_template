@@ -15,6 +15,9 @@ class ColorPalette extends StatelessWidget {
   // widget sin estado, por ejemplo
   //final Function(String) callback;
 
+  // el callback se puede llamar así en el GestureDetector
+  //  onTap: () => callback(baseColor.toString())
+
   @override
   Widget build(BuildContext context) {
     // padding para crear espacio alrededor del widget
